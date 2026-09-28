@@ -2,17 +2,14 @@
   "name": "nutri-scan",
   "version": "1.0.0",
   "description": "Free nutrition label scanner and meal planner app",
-  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test tests/**/*.test.js",
-    "start": "npx serve ."
+    "test": "node --test tests/",
+    "start": "npx serve public",
+    "dev": "npx serve public --cors -l 3000"
   },
-  "keywords": ["nutrition", "scanner", "meal-planner", "health"],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "tesseract.js": "^5.1.1"
+    "tesseract.js": "^5.0.0"
   },
   "devDependencies": {
     "serve": "^14.2.0"
